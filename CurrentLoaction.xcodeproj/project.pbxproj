@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B03ADF61EA7CD5A00804E9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B03ADF51EA7CD5A00804E9A /* CoreLocation.framework */; };
 		6BA2EB631EA6868A00E8556C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2EB621EA6868A00E8556C /* AppDelegate.swift */; };
 		6BA2EB651EA6868A00E8556C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2EB641EA6868A00E8556C /* ViewController.swift */; };
 		6BA2EB681EA6868A00E8556C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA2EB661EA6868A00E8556C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B03ADF51EA7CD5A00804E9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6BA2EB5F1EA6868A00E8556C /* CurrentLoaction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrentLoaction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA2EB621EA6868A00E8556C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BA2EB641EA6868A00E8556C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B03ADF61EA7CD5A00804E9A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B03ADF41EA7CD5A00804E9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B03ADF51EA7CD5A00804E9A /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6BA2EB561EA6868A00E8556C = {
 			isa = PBXGroup;
 			children = (
 				6BA2EB611EA6868A00E8556C /* CurrentLoaction */,
 				6BA2EB601EA6868A00E8556C /* Products */,
+				6B03ADF41EA7CD5A00804E9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					6BA2EB5E1EA6868A00E8556C = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 57BL24GSG7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57BL24GSG7;
 				INFOPLIST_FILE = CurrentLoaction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.veer.CurrentLoaction;
@@ -272,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57BL24GSG7;
 				INFOPLIST_FILE = CurrentLoaction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.veer.CurrentLoaction;
@@ -299,6 +314,7 @@
 				6BA2EB731EA6868A00E8556C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
